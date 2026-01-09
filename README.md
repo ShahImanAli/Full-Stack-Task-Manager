@@ -15,17 +15,18 @@ A full-stack MERN (MongoDB, Express, React, Node.js) task management application
 ## Tech Stack
 
 ### Frontend
+
 - React 19
 - Vite
 - React Router DOM
 - Tailwind CSS 4
 - Radix UI Components
 - React Hook Form
-- Zod (Validation)
 - Axios
 - Sonner (Toast Notifications)
 
 ### Backend
+
 - Node.js
 - Express 5
 - MongoDB with Mongoose
@@ -72,18 +73,21 @@ Task-Manager/
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone <your-repo-url>
 cd Task-Manager
 ```
 
 2. Install Backend dependencies
+
 ```bash
 cd Backend
 npm install
 ```
 
 3. Install Frontend dependencies
+
 ```bash
 cd ../Frontend
 npm install
@@ -92,7 +96,9 @@ npm install
 ### Environment Variables
 
 #### Backend (.env)
+
 Create a `.env` file in the Backend directory:
+
 ```env
 PORT=8000
 MONGODB_URI=your_mongodb_connection_string
@@ -107,7 +113,9 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ```
 
 #### Frontend (.env)
+
 Create a `.env` file in the Frontend directory:
+
 ```env
 VITE_API_URL=http://localhost:8000/api/v1
 ```
@@ -115,30 +123,35 @@ VITE_API_URL=http://localhost:8000/api/v1
 ### Running the Application
 
 1. Start the Backend server
+
 ```bash
 cd Backend
 npm run dev
 ```
 
 2. Start the Frontend development server
+
 ```bash
 cd Frontend
 npm run dev
 ```
 
 The application will be available at:
+
 - Frontend: http://localhost:5173
 - Backend: http://localhost:8000
 
 ## API Endpoints
 
 ### Authentication
+
 - `POST /api/v1/users/register` - Register a new user
 - `POST /api/v1/users/login` - Login user
 - `POST /api/v1/users/logout` - Logout user
 - `GET /api/v1/users/current-user` - Get current user
 
 ### Tasks
+
 - `GET /api/v1/tasks` - Get all tasks
 - `POST /api/v1/tasks` - Create a new task
 - `GET /api/v1/tasks/:id` - Get task by ID
@@ -148,10 +161,12 @@ The application will be available at:
 ## Scripts
 
 ### Backend
+
 - `npm run dev` - Start development server with nodemon
 - `npm start` - Start production server
 
 ### Frontend
+
 - `npm run dev` - Start Vite development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
